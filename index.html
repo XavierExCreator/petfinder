@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>petFinder</title>
+    <link rel="stylesheet" href="css/stylesheets.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Let's find your perfect pet!</h1>
+
+    <div class="divForm">
+      <form class="petForm">
+        <label for="userName">Name: <span>*</span></label
+        ><br />
+        <input id="userName" name="userName" type="text" required /><br />
+
+        <label for="userEmail">Email: <span>*</span></label
+        ><br />
+        <input id="userEmail" name="userEmail" type="email" required /><br />
+
+        <label for="location">Zip Code: <span>*</span></label
+        ><br />
+        <input id="location" name="location" type="text" required /><br />
+
+        <label for="petOptions">Type of pet: <span>*</span></label
+        ><br />
+        <select name="petOptions" id="petOptions" required>
+          <option value="">-- Select One --</option>
+          <option value="Cat">Cat</option>
+          <option value="Dog">Dog</option>
+          <option value="Bird">Bird</option>
+          <option value="Rabbit">Rabbit</option></select
+        ><br />
+        <button type="submit">Submit</button>
+      </form>
+      <button class="restartButton" type="submit">Restart Pet-Finder</button>
+    </div>
+    <div class="petResults"></div>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
